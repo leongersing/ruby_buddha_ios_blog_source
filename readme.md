@@ -87,7 +87,7 @@ That's it for now. We'll be adding a few things in a bit, but for now, let's get
 app up and running. Open the "DetailView.xib" file in Interface Builder. 
 
 Delete the label that reads "Content goes here." and pull onto the design surface 2
-controls. The UILabel and the UITextView. Style them however you like. One is going to 
+controls. The UITextField and the UITextView. Style them however you like. One is going to 
 be our title, the other is going to be the body of our post. Save the file and go
 back to Xcode.
 
