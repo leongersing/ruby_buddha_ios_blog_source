@@ -43,31 +43,26 @@ were born in scripting languages, like Ruby, and have no memories or experience
 dealing with sandboxes, resource constraints and memory management. In Ruby, and
 agile in general, we can defer many of our decisions to the time in which
 they become a problem. One of the common "problems" or "ilities" that gets
-deferred is performance. We figure, in Ruby, that since our language is pretty slow
-comparatively (put your pitchforks down, townsfolk. I'm one of you.) we will
-leverage other hardware solutions to scale out, horizontally, when the need arises.
-
-Well, this is not the way to start thinking about your iOS code. Your decisions
+deferred is performance but I don't recommend that for iOS projects.  Your choices
 regarding resources, performance and memory management are important the moment
-you start. These are things we must look at, up front, and continuously throughout
-the life of our development. Unlike our time with Rails, we've got to make these
-choices now. It will feel a little weird, as if we're doing a bit of upfront design,
-but that's the environment in which you're in and just like walking into someone's
-home as a guest it's appropriate to be polite, appreciate and share in your host's
-customs and not look at everything that may be unfamiliar and start calling it
-crap. I find, when visiting other languages, frameworks and platforms, that it
-helps to learn to use the chopsticks when eating the noodles rather than complain
-that I'm not allowed to use a fork and that chopsticks are stupid; tweeting how much
-I hate them and the people who use them and that they are living in the dark
-ages for using such primitive tools. If I did that in your home, you'd dismiss
-my arrogance and never invite me back. We'd both miss out on enjoying one another's
-culture and that would be a real shame.
+you begin. It may feel a bit weird, as if we're doing a bit of upfront design
+but that's the environment in which you're in.
 
-Before we can run, let's walk. Since you're into Ruby you may have seen my favorite
-framework intro video of all time; David Heiemier Hanson's "Ooopies" video. This great
-video introduced me to Rails, Ruby, DHH and the culture. David built a blog in 15
-minutes, he didn't deploy it, he didn't scale it to millions he just built a small
-blog. We're going to do the same thing. A small application that allows us to create,
+On a personal note, I find, when visiting other languages, frameworks and platforms,
+that it helps to learn to use the chopsticks when eating the noodles rather than complain
+that I'm not allowed to use a fork. It will increase the learning curve to some extent
+but usually helps to provide a frame of reference when interacting with a new community.
+In Ruby, we expect guests to learn our customs (aka idioms) in order to play and
+Cocoa/Objective-C is no different. They've got some wonderful traditions and
+it only helps to enrich our experience as developers to learn, take part and contribute back to them.
+
+Since you're into Ruby you may have seen my favorite framework intro video of all time; 
+David Heiemier Hanson's Creat a blog in 15 minutes video (sometimes known affectionately as the "oopsie video!"). 
+This was the talk that introduced me to Rails, Ruby, DHH and the culture as a whole. 
+David built a blog in 15 minutes, he didn't deploy it,
+he didn't scale it to millions he just built a small blog. He was just a guy, having fun,
+writing some code. So, We're going to do the same thing.
+Build a small blog application for iPad that allows us to create,
 update, delete and view a blog post as well as view a list of posts.
 
 ## Create the project.
