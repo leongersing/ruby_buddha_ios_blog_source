@@ -84,8 +84,8 @@ object model with Core Data. Open the "blog.xcdatamodel" file to begin creating
 our object graph.
 
 * Create a new entity called "Post".
-** Create property "title" type String, min 2 chars, uncheck "optional", check "indexed"
-** Create property "body" type String, uncheck "optional"
+* Create property "title" type String, min 2 chars, uncheck "optional", check "indexed"
+* Create property "body" type String, uncheck "optional"
 
 That's it for now. We'll be adding a few things in a bit, but for now, let's get this
 app up and running. Open the "DetailViewController.xib" file in Interface Builder. 
@@ -114,6 +114,7 @@ a private field, a public getter and a public setter will be generated at compil
 time when using @property and @synthesize.
 
 @synthesize titleField;
+
 @synthesize bodyField;
 
 Find the dealloc selector (a method in Objective-c parlance) and release our
