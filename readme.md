@@ -84,7 +84,7 @@ our object graph.
 * Rename the "timeStamp" property to "createdAt"
 
 That's it for now. We'll be adding a few things in a bit, but for now, let's get this
-app up and running. Open the "DetailViewController.xib" file in Interface Builder. 
+app up and running. Open the "DetailView.xib" file in Interface Builder. 
 
 Delete the label that reads "Content goes here." and pull onto the design surface 2
 controls. The UILabel and the UITextView. Style them however you like. One is going to 
