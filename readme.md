@@ -78,9 +78,10 @@ that it's the same implementation that Rails uses. That said, let's define our
 object model with Core Data. Open the "blog.xcdatamodel" file to begin creating
 our object graph.
 
-* Create a new entity called "Post".
+* Rename the "Event" entity to "Post"
 * Create property "title" type String, min 2 chars, uncheck "optional", check "indexed"
 * Create property "body" type String, uncheck "optional"
+* Rename the "timeStamp" property to "createdAt"
 
 That's it for now. We'll be adding a few things in a bit, but for now, let's get this
 app up and running. Open the "DetailViewController.xib" file in Interface Builder. 
@@ -154,6 +155,14 @@ fantastic.
 Jump back to our DetailView.xib file and connect the new properties to
 our controls and wire the button's touchUpInside event to our save Method.
 
+If you're unfamiliar with the concept of making connections in IB, I recommend
+the excellent [IB programmers guide from apple](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/IB_UserGuide/Introduction/Introduction.html)
+I'm sorry if that feels like a bit of RT(f)?M but seriously, it's a really nice
+manual and worth checking out for all the bells and whistles that IB provides. How's
+this for incentive: that big graphical tool is just a visual representation of what
+you would do in code serialized to disk and rehydrated as Objects at runtime! Cool stuff
+and, in my humble experience, worth your investment in learning.
+
 Once we've done all this, we need to make a few changes to our RootViewController
 to ensure that it's using our Post entity for data and not the default data type
 of event.
@@ -166,14 +175,22 @@ comment "// If appropriate, configure the new managed object." change it to this
     [newManagedObject setValue:@"Edit Body" forKey:@"body"];
 
 Now you've setup a new item, gave it some valid data and selected it in the table.
-We've got to make one more change... edit selector:"fetchedResultsController" and
-look for the comment "// Edit the entity name as appropriate."
-change "Event" to "Post" and the sort descriptor from "timeStamp" to "createdAt".
+We've got to make one more change... Remember how we changed the "Event" entity
+to "Post" and "timeStamp" to "createdAt"? Well, this is why: searching projects
+is probably one of the most common things I have to do in a new IDE. I thought it
+might be fun to give it a try right now.
 
-That's it. Build and run and start adding and editing. You should note that even if
-you close the application and come back all your changes have been saved. 
+Either go to Edit > Find > Find in Project or type (Shift+ CMD+ F) to start a project
+search. enter "timeStamp" and click find. You should be able to click the results to
+jump immedately to where that key is being used in the application. Go ahead and update
+them to "createdAt" and find/update Event to Post.
 
-Most of this is not magic, it's just using the Core Data framework to persist your
+## SHIP IT! 
+
+Just kidding! But you can run it and you should see a fully working application that
+allows you to create and edit blog entries. Changes are going to be saved and new
+posts will be saved between application launches even though you never wrote code
+to save the posts, it's there. Our app is using the Core Data framework to persist your
 object graph to SQLite. It's a lot like Rails in the sense that if you use what is 
 generated, then by convention you're going to write and maintance a lot less code. Just
 like Rails and Ruby you're free to make the changes that your app needs to make but
