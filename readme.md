@@ -57,7 +57,7 @@ Cocoa/Objective-C is no different. They've got some wonderful traditions and
 it only helps to enrich our experience as developers to learn, take part and contribute back to them.
 
 Since you're into Ruby you may have seen my favorite framework intro video of all time; 
-David Heiemier Hanson's Creat a blog in 15 minutes video (sometimes known affectionately as the "oopsie video!"). 
+David Heinemeier Hansson's "Create a blog in 15 minutes video" (sometimes known affectionately as the "oopsie video!"). 
 This was the talk that introduced me to Rails, Ruby, DHH and the culture as a whole. 
 David built a blog in 15 minutes, he didn't deploy it,
 he didn't scale it to millions he just built a small blog. He was just a guy, having fun,
