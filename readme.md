@@ -102,10 +102,10 @@ than Xcode...remember you're in a guest's house. Be polite. Learn to let go.
 
 Open the "DetailViewController.h" file and add 2 properties and one selector:
 
-@property (nonatomic, retain) IBOutlet UITextField *titleField;
-@property (nonatomic, retain) IBOutlet UITextView *bodyField;
+    @property (nonatomic, retain) IBOutlet UITextField *titleField;  
+    @property (nonatomic, retain) IBOutlet UITextView *bodyField;
 
-- (IBAction) saveObject:(id)sender;
+    - (IBAction) saveObject:(id)sender;
 
 Jump to the DetailViewController.m and synth those properties.
 
@@ -113,9 +113,8 @@ Note: @synthesize and @property are analogous to the attr_accessor macro in Ruby
 a private field, a public getter and a public setter will be generated at compile
 time when using @property and @synthesize.
 
-@synthesize titleField;
-
-@synthesize bodyField;
+    @synthesize titleField;  
+    @synthesize bodyField;
 
 Find the dealloc selector (a method in Objective-c parlance) and release our
 new properties. Remember to put your toys away after playing with them, especially
@@ -131,8 +130,8 @@ have to put away your toys.
 
 Add these lines:
 
-[bodyField release];bodyField = nil;
-[titleField release];titleField = nil;
+    [bodyField release];bodyField = nil;  
+    [titleField release];titleField = nil;
 
 Now, the last bits where I mark these fields nil is something I've added. The generated
 code does not do this. I do this for one reason: sending messages to nil in Objective-C
@@ -144,12 +143,12 @@ helped me out.
 
 and finally implement the save method like so...
 
-- (IBAction) saveObject:(id)sender{
-  if(detailItem){
-    [detailItem setValue:titleField.text forKey:@"title"];
-    [detailItem setValue:bodyField.text forKey:@"name"];
-  }
-}
+    - (IBAction) saveObject:(id)sender{  
+      if(detailItem){  
+        [detailItem setValue:titleField.text forKey:@"title"];  
+        [detailItem setValue:bodyField.text forKey:@"name"];  
+      }  
+    }
 
 It may seem odd that we're not calling save or create or update or asking the
 table to refresh in order to see a change but that's the magic that is Core Data
@@ -167,9 +166,9 @@ of event.
 Open RootViewController.m and edit the insertNewObject: selector. Under the 
 comment "// If appropriate, configure the new managed object." change it to this:
 
-[newManagedObject setValue:[NSDate date] forKey:@"createdAt"];
-[newManagedObject setValue:@"New Post" forKey:@"title"];
-[newManagedObject setValue:@"Edit Body" forKey:@"body"];
+    [newManagedObject setValue:[NSDate date] forKey:@"createdAt"];  
+    [newManagedObject setValue:@"New Post" forKey:@"title"];  
+    [newManagedObject setValue:@"Edit Body" forKey:@"body"];
 
 Now you've setup a new item, gave it some valid data and selected it in the table.
 We've got to make one more change... edit selector:"fetchedResultsController" and
@@ -189,5 +188,5 @@ or re-inventing the wheel, that's probably a sign that you are!
 That's a quick view of creating a small iPad blogging app. Perhaps you'd like to add
 some Tags or a search feature? Post a comment, I'd love to see what you come up with.
 If you'd like to download the source code for this article, fork it from 
-[github.com](http://github.com/leongersing/
+[github.com](https://github.com/leongersing/ruby_buddha_ios_blog_source)
 
