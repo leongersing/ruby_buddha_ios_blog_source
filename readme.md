@@ -1,4 +1,4 @@
-uby Buddha takes a holiday
+# Ruby Buddha takes a holiday
 
 I love Ruby but life is about balance. I like to balance my love
 for one language by taking a look at what else is out there. This
