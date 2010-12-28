@@ -144,7 +144,7 @@ and finally implement the save method like so...
     - (IBAction) saveObject:(id)sender{  
       if(detailItem){  
         [detailItem setValue:titleField.text forKey:@"title"];  
-        [detailItem setValue:bodyField.text forKey:@"name"];  
+        [detailItem setValue:bodyField.text forKey:@"body"];  
       }  
     }
 
