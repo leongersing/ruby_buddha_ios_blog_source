@@ -195,8 +195,22 @@ like Rails and Ruby you're free to make the changes that your app needs to make 
 just remember that at some point if you feel like you're swimming against the current,
 or re-inventing the wheel, that's probably a sign that you are!
 
+## BUT WHAT ABOUT THE REST OF CRUD?!
+
+Oh, you didn't notice? Core Data took care of the rest of that for us. Go ahead
+and swipe an article in the list of articles... DELETE! Try selecting an article
+from the list, make a few changes and click save. UPDATED! It really is an amazing
+little framework and when you need to produce data/service driven apps quickly
+tools like Xcode, Interface Builder and the Cocoa frameworks go a long way to
+get you up and running quickly. The innovated ideas and breakthrough user experience?
+That's all you!
+
+
+## That's it for now...
+
 That's a quick view of creating a small iPad blogging app. Perhaps you'd like to add
-some Tags or a search feature? Post a comment, I'd love to see what you come up with.
-If you'd like to download the source code for this article, fork it from 
+some Tags or a search feature? Questions? Concerns? Wanna share your blog app?
+Go ahead and post a comment, I'd love to see what you come up with.
+If you'd like to download the source code for this article, fork it from
 [github.com](https://github.com/leongersing/ruby_buddha_ios_blog_source)
 
