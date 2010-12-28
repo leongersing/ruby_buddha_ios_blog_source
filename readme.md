@@ -20,23 +20,21 @@ so learning these bits on the Mac will pay off in your iOS development
 as well. For example, as of iOS 4.2 you can now use blocks in your
 iPhone, iPod Touch and iPad applications.
 
-Now the bad news: iOS is a rapidly evolving framework. They have a plan
-and it shows but that means that some APIs will changing frequently
-and you'll want to pay close attention once you have an application in
-the store. The app store is a great way to sell and market your applications
-but make no mistake, it's not the same release schedule as your Sinatra app
+Now the bad news: iOS is a rapidly evolving framework and APIs evolve frequently.
+You will want to pay close attention once you have an application in
+the store for breaking changes and backward compatibility.
+The app store is a great way to sell and market your applications
+but make no mistake, it doesn't quite follow the same release schedule as your Sinatra app
 on Heroku.com! When the team at Apple is backed up you can wait several days
-to get your app approved and there is no real difference between a new app
-being reviews and one that's being updated. It takes time and you'll need
-to account for that when planning your releases.
-
-But evolving frameworks should be nothing new to even the newest Rubyist! So,
-without further adieu let's take step one on our journey to iOS fame and fortune.
+to get your app approved. There is no difference in review time between a new app
+and an update. It takes time and you'll need to account for that when planning your releases.
+I like to think of it as the "change management review" process many enterprises
+have in place.
 
 ## Building something small
 
-There's a few hello world applications that are out there on the internet
-for young iOS developers but few are speaking to folks coming from
+There's a few hello world applications on the internet
+for new iOS developers but few are aimed at those coming from
 the most prevalent platform over the last 15 years. Not windows, not mac, not
 Linux... the internet. That's right, the internet. Many developers today
 were born in scripting languages, like Ruby, and have no memories or experience
@@ -71,7 +69,7 @@ Open Xcode and select the "Split-View Application" and check the "Use Core Data"
 That's right, friends. We're going to write an iPad application. Something that
 will make writing a blog a little more pleasurable!
 
-In the generated project (kind of like running, rails <app> is it not?) files you'll
+In the generated project (kind of like running rails <app> is it not?) files you'll
 see a great many files. If you're familiar with Rails then some of the terms are going to
 look familiar but don't go thinking that just because Cocoa implements MVC (Model-View-Controller)
 that it's the same implementation that Rails uses. That said, let's define our
