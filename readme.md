@@ -71,7 +71,7 @@ Open Xcode and select the "Split-View Application" and check the "Use Core Data"
 That's right, friends. We're going to write an iPad application. Something that
 will make writing a blog a little more pleasurable!
 
-In the generated project (kind of like running, Rails <app> is it not?) files you'll
+In the generated project (kind of like running Rails <app> is it not?) files you'll
 see a great many files. If you're familiar with Rails then some of the terms are going to
 look familiar but don't go thinking that just because Cocoa implements MVC (Model-View-Controller)
 that it's the same implementation that Rails uses. That said, let's define our
