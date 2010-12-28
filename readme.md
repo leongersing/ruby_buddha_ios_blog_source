@@ -187,6 +187,21 @@ search. enter "timeStamp" and click find. You should be able to click the result
 jump immedately to where that key is being used in the application. Go ahead and update
 them to "createdAt" and find/update Event to Post.
 
+## Seeing the changes...
+
+OK, you probably want to see it in action. There are 2 selectors that need some
+code in order to see our changes in the app. First up, open DetailViewController.m
+and look for -(void)configureView. add these two lines...
+
+  titleField.text = [detailItem valueForKey:@"title"];  
+  bodyField.text = [detailItem valueForKey:@"body"];
+
+Then open RootViewController.m and look for  
+  - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+
+let's see that title by adding:  
+  cell.textLabel.text = [managedObject valueForKey:@"title"];  
+
 ## SHIP IT! 
 
 Just kidding! But you can run it and you should see a fully working application that
