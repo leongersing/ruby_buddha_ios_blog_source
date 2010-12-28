@@ -11,7 +11,7 @@ and the C language. After all, I haven't used a non-garbage collected
 language in over 10 years and even then it was easy to make a mistake.
 
 First the good news: If you're doing Snow Leopard development then
-there are so many additions to objective-c 2.0 that you may feel
+there are so many additions to Objective-C 2.0 that you may feel
 pretty comfortable. C Blocks have been added allowing for some
 functional programming style closures and the best part: A really
 nice Garbage Collector has been added. Now, iOS is never too far
@@ -69,7 +69,7 @@ Open Xcode and select the "Split-View Application" and check the "Use Core Data"
 That's right, friends. We're going to write an iPad application. Something that
 will make writing a blog a little more pleasurable!
 
-In the generated project (kind of like running rails <app> is it not?) files you'll
+In the generated project (kind of like running Rails <app> is it not?) files you'll
 see a great many files. If you're familiar with Rails then some of the terms are going to
 look familiar but don't go thinking that just because Cocoa implements MVC (Model-View-Controller)
 that it's the same implementation that Rails uses. That said, let's define our
@@ -101,7 +101,7 @@ Open the "DetailViewController.h" file and add 2 properties and one selector:
 
     - (IBAction) saveObject:(id)sender;
 
-Jump to the DetailViewController.m and synth those properties.
+Jump to the DetailViewController.m and synthesize those properties.
 
 Note: @synthesize and @property are analogous to the attr_accessor macro in Ruby.
 a private field, a public getter and a public setter will be generated at compile
@@ -154,7 +154,7 @@ Jump back to our DetailView.xib file and connect the new properties to
 our controls and wire the button's touchUpInside event to our save Method.
 
 If you're unfamiliar with the concept of making connections in IB, I recommend
-the excellent [IB programmers guide from apple](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/IB_UserGuide/Introduction/Introduction.html)
+the excellent [Interface Builder User Guide](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/IB_UserGuide/Introduction/Introduction.html) from Apple.
 I'm sorry if that feels like a bit of RT(f)?M but seriously, it's a really nice
 manual and worth checking out for all the bells and whistles that IB provides. How's
 this for incentive: that big graphical tool is just a visual representation of what
@@ -163,7 +163,7 @@ and, in my humble experience, worth your investment in learning.
 
 Once we've done all this, we need to make a few changes to our RootViewController
 to ensure that it's using our Post entity for data and not the default data type
-of event.
+of Event.
 
 Open RootViewController.m and edit the insertNewObject: selector. Under the 
 comment "// If appropriate, configure the new managed object." change it to this:
