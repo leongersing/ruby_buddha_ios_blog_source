@@ -84,10 +84,14 @@ our object graph.
 That's it for now. We'll be adding a few things in a bit, but for now, let's get this
 app up and running. Open the "DetailView.xib" file in Interface Builder. 
 
-Delete the label that reads "Content goes here." and pull onto the design surface 2
-controls. The UITextField and the UITextView. Style them however you like. One is going to 
-be our title, the other is going to be the body of our post. Save the file and go
-back to Xcode.
+Delete the label that reads "Content goes here." and pull onto the design surface 3
+controls:
+
+  * UITextField  (for the title)
+  * UITextView   (for the body)
+  * UIBarButton  (for saving - place it in the toolbar)
+
+Style them however you like. Save the file and go back to Xcode.
 
 We're going to be jumping back and forth from IB to Xcode so get used to alt-tabbing
 your way around. While you're welcome to use Vim or Emacs or TextMate or whatever 
@@ -151,7 +155,7 @@ series and are outside the scope of this tutorial. Never-the-less, they are pret
 fantastic.
 
 Jump back to our DetailView.xib file and connect the new properties to
-our controls and wire the button's touchUpInside event to our save Method.
+our controls and wire the save button's touchUpInside event to our save Method.
 
 If you're unfamiliar with the concept of making connections in IB, I recommend
 the excellent [Interface Builder User Guide](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/IB_UserGuide/Introduction/Introduction.html) from Apple.
