@@ -59,7 +59,7 @@ David Heinemeier Hansson's "Create a blog in 15 minutes video" (sometimes known 
 This was the talk that introduced me to Rails, Ruby, DHH and the culture as a whole. 
 David built a blog in 15 minutes, he didn't deploy it,
 he didn't scale it to millions he just built a small blog. He was just a guy, having fun,
-writing some code. So, We're going to do the same thing.
+writing some code. So, we're going to do the same thing.
 Build a small blog application for iPad that allows us to create,
 update, delete and view a blog post as well as view a list of posts.
 
@@ -93,7 +93,7 @@ controls:
 
 Style them however you like. Save the file and go back to Xcode.
 
-We're going to be jumping back and forth from IB to Xcode so get used to alt-tabbing
+We're going to be jumping back and forth from IB to Xcode so get used to cmd-tabbing
 your way around. While you're welcome to use Vim or Emacs or TextMate or whatever 
 IDE you heart the most you'll probably not get a better experience for iOS development
 than Xcode...remember you're in a guest's house. Be polite. Learn to let go.
@@ -123,7 +123,7 @@ in our home (Ruby that is, if you're following along in this anaolgy...) don't h
 to pick up their play things. Objective-C on iOS, on the other hand is a lot like
 Ruby Buddha's house. We're poor and can't afford nannies and maids so guests have to
 pick up after themselves. The rule in iOS is if you take it out to play with it, you
-have to put it away. Dealloc is your mom calling at the end of the day. Its when you
+have to put it away. Dealloc is your mom calling at the end of the day. It's when you
 have to put away your toys.
 
 Add these lines:
